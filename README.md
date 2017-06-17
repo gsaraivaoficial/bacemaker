@@ -9,7 +9,7 @@ The Input pins use INPUT_PULLUP, so the other end of your switch will go to grou
 
 This project assumes you are using a foot pedal that has 13 pedals, starting and ending with C.
 
-Change Sustain go to lines 267,..., 281 and edit values, for end test. 
+Change Sustain go to lines 267,..., 281 and edit values, test for end.
 
 !Attention!
 
