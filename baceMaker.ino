@@ -147,7 +147,7 @@ void setup(){
   pinMode(ledPin, OUTPUT);
   digitalWrite(ledPin,HIGH);
   // In case of first run:
-  int octave_test = EEPROM.read('octave_addr');
+  int octave_test = EEPROM.read(octave_addr);
   if (octave_test==NULL) {
     firstRun();
   }
@@ -238,7 +238,7 @@ void updateControl(){
         aSaw1.setFreq(note); // set the frequency
         aTri1.setFreq(note); // set the frequency
         aSin2.setFreq((note - 2)); // set the frequency
-        aSin3.setFreq((notes[current_pin][2])); // set the frequency        
+        aSin3.setFreq((notes[current_pin][2]) - 2); // set the frequency        
         aSin4.setFreq((notes[current_pin][3])); // set the frequency
         aSin5.setFreq((notes[current_pin][4])); // set the frequency
         aSin6.setFreq((notes[current_pin][5])); // set the frequency
