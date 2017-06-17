@@ -153,7 +153,7 @@ void setup(){
   }
   
   Serial.begin(115200);
-  for (int pullup = 0; pullup <= 13; pullup ++) {
+  for (int pullup = 1; pullup <= 13; pullup ++) {
     pinMode(pins[pullup], INPUT_PULLUP);
   }
   silenceMaker();
