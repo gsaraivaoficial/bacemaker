@@ -5,11 +5,17 @@ Uses the Mozzi Library: http://sensorium.github.io/Mozzi/
 
 Output on Pin 9, be sure to connect your preferred resistors so it's not ridiculously loud! 10K to ground should do it.
 
+That's great that you figured it out! What was it? All of the sound fx are between lines 196..297. You can change the times of the swell/sustain, or alter the octaves there too. Tremolo default speed is line 717.﻿
+
 The Input pins use INPUT_PULLUP, so the other end of your switch will go to ground, as we're detecting a LOW signal.
 
 This project assumes you are using a foot pedal that has 13 pedals, starting and ending with C.
 
-Change Sustain go to lines 267,..., 281 and edit values, test for end.
+change octave go to line 235 and edit values, test for end.
+
+Change swell (fade in) go to lines 213,..., 228 and edit values, test for end.
+
+Change Sustain (fade out) go to lines 267,..., 281 and edit values, test for end.
 
 !Attention!
 
